@@ -105,7 +105,7 @@ body {
   bottom: 55vh; /* placeret på y-aksen fra bunden */
   right: -80px; /* placeret på x-aksen */
   z-index: 3; /* sørg for den ligger over baggrunden */
-  animation: gul-kirurg-swim 25s linear infinite;
+  animation: gul-kirurg-swim 19s linear infinite;
 }
 
 @keyframes gul-kirurg-swim {
@@ -122,7 +122,7 @@ body {
   right: -80px;
   transform: none;
   z-index: 3;
-  animation: dvaergkejserfisk-swim 15s linear infinite;
+  animation: dvaergkejserfisk-swim 24s linear infinite;
 }
 
 @keyframes dvaergkejserfisk-swim {
@@ -139,14 +139,14 @@ body {
   right: -80px;
   transform: none;
   z-index: 3;
-  animation: paletkirurgfisk-swim 20s linear infinite;
+  animation: paletkirurgfisk-swim 14s linear infinite;
 }
 
 @keyframes paletkirurgfisk-swim {
   100% {
     transform: translateX(100px) rotateY(180deg);}
   0% {
-    transform: translateX(-1900px) rotateY(180deg);}
+    transform: translateX(-1700px) rotateY(180deg);}
 }
 
 #klovnefisk {
@@ -156,7 +156,7 @@ body {
   right: -80px;
   transform: none;
   z-index: 3;
-  animation: klovnefisk-swim 28s linear infinite;
+  animation: klovnefisk-swim 30s linear infinite;
 }
 
 @keyframes klovnefisk-swim {
