@@ -110,9 +110,11 @@ body {
 
 @keyframes gul-kirurg-swim {
   100% {
-    transform: translateX(100px);}
+    transform: translateX(100px);
+  }
   0% {
-    transform: translateX(-1700px);}
+    transform: translateX(-1700px);
+  }
 }
 
 #dvaergkejserfisk {
@@ -127,9 +129,11 @@ body {
 
 @keyframes dvaergkejserfisk-swim {
   100% {
-    transform: translateX(100px) rotateY(180deg);}
+    transform: translateX(100px) rotateY(180deg);
+  }
   0% {
-    transform: translateX(-1700px) rotateY(180deg);}
+    transform: translateX(-1700px) rotateY(180deg);
+  }
 }
 
 #paletkirurgfisk {
@@ -144,9 +148,11 @@ body {
 
 @keyframes paletkirurgfisk-swim {
   100% {
-    transform: translateX(100px) rotateY(180deg);}
+    transform: translateX(100px) rotateY(180deg);
+  }
   0% {
-    transform: translateX(-1700px) rotateY(180deg);}
+    transform: translateX(-1700px) rotateY(180deg);
+  }
 }
 
 #klovnefisk {
@@ -161,9 +167,11 @@ body {
 
 @keyframes klovnefisk-swim {
   100% {
-    transform: translateX(100px) rotateY(180deg);}
+    transform: translateX(100px) rotateY(180deg);
+  }
   0% {
-    transform: translateX(-1600px) rotateY(180deg);}
+    transform: translateX(-1600px) rotateY(180deg);
+  }
 }
 
 #pudsefisk {
@@ -178,9 +186,11 @@ body {
 
 @keyframes pudsefisk-swim {
   0% {
-    transform: translateX(80px) rotateY(180deg);}
+    transform: translateX(80px) rotateY(180deg);
+  }
   100% {
-    transform: translateX(-2000px) rotateY(180deg);}
+    transform: translateX(-2000px) rotateY(180deg);
+  }
 }
 
 #hvidstrubet-kirurgfisk {
@@ -195,9 +205,11 @@ body {
 
 @keyframes hvidstrubet-kirurgfisk-swim {
   0% {
-    transform: translateX(200px);}
+    transform: translateX(200px);
+  }
   100% {
-    transform: translateX(-2000px);}
+    transform: translateX(-2000px);
+  }
 }
 
 #pincetfisk {
@@ -212,9 +224,11 @@ body {
 
 @keyframes pincetfisk-swim {
   0% {
-    transform: translateX(400px) rotateY(180deg);}
+    transform: translateX(400px) rotateY(180deg);
+  }
   100% {
-    transform: translateX(-2000px) rotateY(180deg);}
+    transform: translateX(-2000px) rotateY(180deg);
+  }
 }
 
 #sortbaandet-kirurgfisk {
@@ -229,9 +243,11 @@ body {
 
 @keyframes sortbaandet-kirurgfisk-swim {
   0% {
-    transform: translateX(300px) rotateY(180deg);}
+    transform: translateX(300px) rotateY(180deg);
+  }
   100% {
-    transform: translateX(-2000px) rotateY(180deg);}
+    transform: translateX(-2000px) rotateY(180deg);
+  }
 }
 
 /* Tilbage knappen */
@@ -271,18 +287,19 @@ body {
 /* Bestemmer placering af pop-up med facts */
 .facts {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffffff;
-  padding: 10px 12px;
-  border-radius: 8px;
+  right: 42vw;
+  bottom: 40vh;
+  background-image: url(../images/facts/Pop-up.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 320px;
+  padding: 30px;
   font-size: 14px;
   line-height: 1.35;
-  max-width: min(320px, 90vw);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
   opacity: 0;
-  transform: translateY(8px);
   transition: opacity 0.25s ease, transform 0.25s ease;
   pointer-events: none; /*så objektet ikke fanger musen når man flytter den henover*/
   z-index: 1000;

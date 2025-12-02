@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Parameter: html - den tekst indeholdende html-tags som vi vil vise i tooltip'en
   function showTooltip(html) {
     if (tooltip) {
-      // Indsætter teksten i tooltippen
       tooltip.innerHTML = html; // Indsætter teksten i tooltip'en
       tooltip.classList.add("is-visible"); // Gør tooltip'en synlig med css klassen
       setTimeout(function () {
@@ -81,18 +80,18 @@ document.addEventListener("DOMContentLoaded", () => {
   fishInfo.forEach((fish) => {
     const classMap = {
       "Gul kirurgfisk": "gul-kirurgfisk",
-      "Dværgkejserfisk": "dvaergkejserfisk",
-      "Paletkirurgfisk": "paletkirurgfisk",
-      "Klovnefisk": "klovnefisk",
-      "Pudsefisk": "pudsefisk",
+      Dværgkejserfisk: "dvaergkejserfisk",
+      Paletkirurgfisk: "paletkirurgfisk",
+      Klovnefisk: "klovnefisk",
+      Pudsefisk: "pudsefisk",
       "Hvidstrubet kirugfisk": "hvidstrubet-kirurgfisk",
-      "Pincetfisk": "pincetfisk",
-      "Sortbåndet kirugfisk": "sortbaandet-kirurgfisk"
+      Pincetfisk: "pincetfisk",
+      "Sortbåndet kirugfisk": "sortbaandet-kirurgfisk",
     };
 
     const className = classMap[fish.fishName];
 
-    // Tilføjer event listeners til hver bil baseret på data-strukturen
+    // Tilføjer event listeners til hver fisk baseret på data-strukturen
     fishInfo.forEach((fish) => {
       const fishDetails = classMap[fish.fishName];
       if (fishDetails) {

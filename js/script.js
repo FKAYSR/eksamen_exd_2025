@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // Skattekiste lyd
 function handleSkattekisteClick(event) {
   const skattekisteSound = new Audio("sound/forside/skattekiste-sound.mp3");
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   skattekiste.addEventListener("click", handleSkattekisteClick);
 });
 
-
 // Piratskib lyd
 function piratClick(event) {
   const piratSound = new Audio("sound/forside/wooden-ship-break.mp3");
@@ -37,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const piratskib = document.getElementById("piratskib");
   piratskib.addEventListener("click", piratClick);
 });
-
 
 // #region - Virker ikke endnu! Lyd til spil knappen
 // function playBtnClick(event) {
