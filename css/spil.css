@@ -50,6 +50,8 @@ body {
   background: url(../images/spil/mønt.svg);
   pointer-events: none;
   z-index: 5;
+  top: -40px;
+  left: 0px;
 }
 
 #hud {

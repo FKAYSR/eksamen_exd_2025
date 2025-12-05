@@ -8,8 +8,8 @@ const collectibles = document.getElementById("collectibles");
 const point = document.getElementById("point");
 const collectSound = document.getElementById("collectSound");
 
-dodger.style.left = "625px"; // Start i midten horisontalt
-dodger.style.bottom = "400px"; // Start i midten vertikalt
+dodger.style.left = "700px"; // Start i midten horisontalt
+dodger.style.bottom = "350px"; // Start i midten vertikalt
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
@@ -101,6 +101,7 @@ function playSoundOnGameOver() {
   gameoverSound.play();
 }
 
+// Forbedring - point
 let points = 0;
 point.textContent = points;
 
