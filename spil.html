@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Fish-man</title>
+    <title>Pac-Nemo</title>
     <link rel="shortcut icon" href="./images/spil/nemofish.svg" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="../css/spil.css"/>
   </head>
 
   <body>
-    <button id="tilbage">Tilbage</button>
-
     <!-- Heads Up Display -->
+    <div id="hud">
+      Point: <span id="point">0</span>
+    </div>
 
     <div id="game">
-      <div id="player">
+      <div id="pacnemo">
         <img id="dodger" src="../images/spil/nemofish.svg" alt="dodger"/>
       </div>
+
+      <div id="collectibles"></div>
     </div>
+
+    <a href="./index.html" id="tilbage">
+        <img src="./images/facts/tilbage-fisk.svg" alt="gul tilbage fisk">
+      </a>
 
     <audio id="movementSound">
       <source src="../sound/spil/movement-sound.mp3" type="audio/mp3"/>
-      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="collectSound">
+      <source src="./sound/spil/gameover-sound.mp3">
     </audio>
 
     <audio id="gameoverSound">
       <source src="../sound/spil/gameover-sound.mp3" type="audio/mp3"/>
-      Your browser does not support the audio element.
     </audio>
 
     <script type="text/javascript" src="../js/spil.js"></script>

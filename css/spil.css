@@ -1,4 +1,14 @@
-/* Tilføj øverst */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+:root {
+  --font-body: "Poppins", sans-serif;
+}
+
 html,
 body {
   height: 100%;
@@ -8,11 +18,15 @@ body {
   box-sizing: border-box;
 }
 
-#dodger {
-  /* background-color: white;
-  height: 20px;
+/* Tilbage knappen */
+#tilbage {
   position: absolute;
-  width: 40px; */
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+#dodger {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -27,6 +41,27 @@ body {
   text-align: center;
   background-size: cover; /* dækker hele baggrunden */
   background-position: center; /* centrer baggrunden */
+}
+
+.collectible {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url(../images/spil/mønt.svg);
+  pointer-events: none;
+  z-index: 5;
+}
+
+#hud {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #fbba28;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: x-large;
+  z-index: 1000;
 }
 
 #start {
@@ -66,17 +101,4 @@ body {
   left: 0;
   position: absolute;
   width: 9px;
-}
-
-#tilbage {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #920b1b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }

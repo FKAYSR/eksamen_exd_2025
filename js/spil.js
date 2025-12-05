@@ -4,6 +4,9 @@ const dodger = document.getElementById("dodger");
 const game = document.getElementById("game");
 const dodgerWidth = 100;
 const dodgerHeight = 100;
+const collectibles = document.getElementById("collectibles");
+const point = document.getElementById("point");
+const collectSound = document.getElementById("collectSound");
 
 dodger.style.left = "625px"; // Start i midten horisontalt
 dodger.style.bottom = "400px"; // Start i midten vertikalt
@@ -98,7 +101,11 @@ function playSoundOnGameOver() {
   gameoverSound.play();
 }
 
-// Tilføj event listener til knappen for at navigere tilbage start siden
-document.getElementById("tilbage").addEventListener("click", function () {
-  window.location.href = "../index.html";
-});
+let points = 0;
+point.textContent = points;
+
+function visCollectible() {
+  
+}
+
+
