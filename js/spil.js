@@ -33,8 +33,6 @@ function moveDodgerLeft() {
   if (left > 0) {
     dodger.style.left = `${left - 30}px`;
     dodger.style.transform = "scaleX(-1)"; // Vend billedet horisontalt
-  } else {
-    playSoundOnGameOver();
   }
 }
 
@@ -47,8 +45,6 @@ function moveDodgerRight() {
     // Sørg for at dodger ikke går ud af højre kant
     dodger.style.left = `${left + 30}px`;
     dodger.style.transform = "scaleX(+1)"; // Vend billedet horisontalt
-  } else {
-    playSoundOnGameOver();
   }
 }
 
@@ -61,8 +57,6 @@ function moveDodgerUp() {
     // Sørg for at dodger ikke går ud af toppen
     dodger.style.bottom = `${bottom + 30}px`;
     dodger.style.transform = "rotate(-90deg)"; // rotér billedet vertikalt
-  } else {
-    playSoundOnGameOver();
   }
 }
 
@@ -73,17 +67,7 @@ function moveDodgerDown() {
   if (bottom > 0) {
     dodger.style.bottom = `${bottom - 30}px`;
     dodger.style.transform = "rotate(90deg)"; // rotér billedet vertikalt
-  } else {
-    playSoundOnGameOver();
   }
-}
-
-// Afspiller lyd ved kollation med væg
-const gameoverSound = document.getElementById("gameoverSound");
-
-function playSoundOnGameOver() {
-  gameoverSound.currentTime = 0;
-  gameoverSound.play();
 }
 
 // Forbedring - point med collectibles(mønter)
