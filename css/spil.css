@@ -47,9 +47,8 @@ body {
   position: absolute;
   width: 32px;
   height: 32px;
-  background: url(../images/spil/mønt.svg);
   pointer-events: none;
-  z-index: 5;
+  z-index: 1000;
   top: -40px;
   left: 0px;
 }
