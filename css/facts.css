@@ -84,7 +84,6 @@ body {
   bottom: 16px;
   left: 40px;
   transform: none;
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -98,7 +97,6 @@ body {
   bottom: 158px;
   left: 340px;
   transform: none;
-  cursor: pointer;
 }
 
 .pirat img {
@@ -114,6 +112,7 @@ body {
   right: -80px; /* placeret på x-aksen */
   z-index: 3; /* sørg for den ligger over baggrunden */
   animation: gul-kirurg-swim 19s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes gul-kirurg-swim {
@@ -133,6 +132,7 @@ body {
   transform: none;
   z-index: 3;
   animation: dvaergkejserfisk-swim 24s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes dvaergkejserfisk-swim {
@@ -152,6 +152,7 @@ body {
   transform: none;
   z-index: 3;
   animation: paletkirurgfisk-swim 14s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes paletkirurgfisk-swim {
@@ -171,6 +172,7 @@ body {
   transform: none;
   z-index: 3;
   animation: klovnefisk-swim 30s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes klovnefisk-swim {
@@ -190,6 +192,7 @@ body {
   transform: none;
   z-index: 3;
   animation: pudsefisk-swim 28s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes pudsefisk-swim {
@@ -209,6 +212,7 @@ body {
   transform: none;
   z-index: 3;
   animation: hvidstrubet-kirurgfisk-swim 20s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes hvidstrubet-kirurgfisk-swim {
@@ -228,6 +232,7 @@ body {
   transform: none;
   z-index: 3;
   animation: pincetfisk-swim 24s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes pincetfisk-swim {
@@ -247,6 +252,7 @@ body {
   transform: none;
   z-index: 3;
   animation: sortbaandet-kirurgfisk-swim 15s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes sortbaandet-kirurgfisk-swim {
@@ -264,7 +270,6 @@ body {
   right: 25vh;
   bottom: -1vh;
   align-items: center;
-  cursor: pointer;
 }
 
 #facts-bubble span {
