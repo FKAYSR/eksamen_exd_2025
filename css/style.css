@@ -176,6 +176,7 @@ body {
   left: 40px; /* placeret i venstre side */
   transform: none; /* fjern tidligere translate */
   z-index: 2; /* sørg for den ligger over baggrunden, bag fiskene */
+  cursor: pointer;
 }
 
 .image-skattekiste img {

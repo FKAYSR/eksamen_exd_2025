@@ -45,6 +45,11 @@ body {
   top: 30px;
   left: 30px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#tilbage:hover {
+  transform: scale(1.05);
 }
 
 .image-button {
@@ -60,6 +65,10 @@ body {
   padding: 0;
   transition: transform 0.3s ease;
   z-index: 100;
+}
+
+.image-button:hover {
+  transform: scale(1.05);
 }
 
 .image-button img {

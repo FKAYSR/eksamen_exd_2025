@@ -25,6 +25,11 @@ body {
   left: 30px;
   cursor: pointer;
   z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+#tilbage:hover {
+  transform: scale(1.05);
 }
 
 #dodger {
