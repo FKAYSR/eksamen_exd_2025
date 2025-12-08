@@ -3,62 +3,67 @@
 // Opretter vores data-struktur med et array som indeholder JS objekter
 const fishInfo = [
   {
+    id: "gul-kirurgfisk",
+    fishImg: "./images/facts/gul-kirurgfisk.svg",
     fishName: "Gul kirurgfisk",
-    fishColor: "Gul",
-    fishLocation: "Det centrale/vestlige Stillehav",
-    fishLength: "Op til 20 cm",
-    fishFood: "Alger og små krebsdyr",
+    fishFact:
+      "Den gule kirurgfisk har en skarp “skalpel” ved haleroden, som den kan bruge til at forsvare sig. Det er derfor, den kaldes kirurgfisk.",
   },
+
   {
+    id: "dvaergkejserfisk",
+    fishImg: "./images/facts/dvaergkejserfisk.svg",
     fishName: "Dværgkejserfisk",
-    fishColor: "Orange og sort",
-    fishLocation:
-      "Australien, Indonesien, Det østlige Stillehav og Det centrale/vestlige Stillehav",
-    fishLength: "Op til 19 cm",
-    fishFood: "Alger og små krebsdyr",
+    fishFact:
+      "Jeg findes i mange flotte farver og mønstre – fra gul og blå til orange og rød. Nogle af os har endda tofarvede mønstre!",
   },
+
   {
+    id: "paletkirurgfisk",
+    fishImg: "./images/facts/paletkirurgfisk.svg",
     fishName: "Paletkirurgfisk",
-    fishColor: "Blå, sort og gul",
-    fishLocation: "Det Indiske Ocean og det vestlige Stillehav",
-    fishLength: "Op til 31 cm",
-    fishFood: "Alger og små krebsdyr",
+    fishFact:
+      "Jeg er søster til Dory! Måske du kan hjælpe mig med at finde hende og Nemo??",
   },
+
   {
+    id: "klovnefisk",
+    fishImg: "./images/facts/klovnfisk.svg",
     fishName: "Klovnefisk",
-    fishColor: "Orange, sort og hvid",
-    fishLocation: "Det østlige Indiske Ocean, Australien og Indonesien",
-    fishLength: "Op til 8 cm",
-    fishFood: "Mikroalger, zooplankton og små krebsdyr",
+    fishFact:
+      "Jeg er en af Nemo’s venner! Vi bor i giftige blomster, men bare rolig! Vi bliver slet ikke syge!",
   },
+
   {
+    id: "pudsefisk",
+    fishImg: "./images/facts/pudsefisk.svg",
     fishName: "Pudsefisk",
-    fishColor: "Hvid, blå og sort",
-    fishLocation:
-      "Det østlige Indiske Ocean, Det vestlige Indiske Ocean, Australien, Det Røde Hav, Indonesien, Det østlige Stillehav og Det centrale/vestlige Stillehav",
-    fishLength: "Op til 11 cm",
-    fishFood: "Parasitter, små krebsdyr og zooplankton",
+    fishFact:
+      "Jeg er havets tandlæge! Jeg tør svømme helt ind i munden, på andre KÆMPE fisk for at finde mad!",
   },
+
   {
+    id: "hvidstrubet-kirurgfisk",
+    fishImg: "./images/facts/hvidstrubet-kirurgfisk.svg",
     fishName: "Hvidstrubet kirugfisk",
-    fishColor: "Hvid, blå, gul og sort",
-    fishLocation: "Det østlige Indiske Ocean og Indonesien",
-    fishLength: "Op til 30 cm",
-    fishFood: "Alger og små krebsdyr",
+    fishFact:
+      "Jeg hjælper med at holde havet rent! Det gør jeg fordi at jeg spiser en hel masse alger!",
   },
+
   {
+    id: "pincetfisk",
+    fishImg: "./images/facts/pincetfisk.svg",
     fishName: "Pincetfisk",
-    fishColor: "Hvid, gul, orange og sort",
-    fishLocation: "Det vestlige Indiske Ocean, Australien og Indonesien",
-    fishLength: "Op til 20 cm",
-    fishFood: "Hvirvelløse dyr, små krebsdyr, større krebsdyr og zooplankton",
+    fishFact:
+      "Jeg har en lang og tynd snude, som jeg kan bruge til at fange andre små dyr! Det ligner åbnebart en pincet, så det er derfor jeg hedder Pincetfisk!",
   },
+
   {
+    id: "sortbaandet-kirurgfisk",
+    fishImg: "./images/facts/sortbaandet-kirurgfisk.svg",
     fishName: "Sortbåndet kirugfisk",
-    fishColor: "Hvid og sort",
-    fishLocation: "Det øst og vestlige Indiske Ocean",
-    fishLength: "Op til 11 cm",
-    fishFood: "Alger",
+    fishFact:
+      "Jeg svømmer rundt med mine mange venner! Og Jeg er altså ikke en zebra! Jeg har heller ikke været i fængsel!",
   },
 ];
 
@@ -68,69 +73,39 @@ document.addEventListener("DOMContentLoaded", () => {
   // Funktion der viser tooltip med fiskeoplysninger
   // Parameter: html - den tekst indeholdende html-tags som vi vil vise i tooltip'en
   function showTooltip(html) {
-    if (tooltip) {
-      tooltip.innerHTML = html; // Indsætter teksten i tooltip'en
-      tooltip.classList.add("is-visible"); // Gør tooltip'en synlig med css klassen
-      setTimeout(function () {
-        tooltip.classList.remove("is-visible"); // Fjerner synligheds-klassen efter 8 sekunder
-      }, 8000);
-    }
+    tooltip.innerHTML = html;
+    tooltip.classList.add("is-visible");
+    setTimeout(() => {
+      tooltip.classList.remove("is-visible");
+    }, 8000);
   }
 
-  fishInfo.forEach((fish) => {
-    const classMap = {
-      "Gul kirurgfisk": "gul-kirurgfisk",
-      Dværgkejserfisk: "dvaergkejserfisk",
-      Paletkirurgfisk: "paletkirurgfisk",
-      Klovnefisk: "klovnefisk",
-      Pudsefisk: "pudsefisk",
-      "Hvidstrubet kirugfisk": "hvidstrubet-kirurgfisk",
-      Pincetfisk: "pincetfisk",
-      "Sortbåndet kirugfisk": "sortbaandet-kirurgfisk",
-    };
+  // fishInfo.forEach((fish) => {
+  //   const classMap = {
+  //     "Gul kirurgfisk: "gul-kirurgfisk",
+  //     Dværgkejserfisk: "dvaergkejserfisk",
+  //     Paletkirurgfisk: "paletkirurgfisk",
+  //     Klovnefisk: "klovnefisk",
+  //     Pudsefisk: "pudsefisk",
+  //     "Hvidstrubet kirugfisk": "hvidstrubet-kirurgfisk",
+  //     Pincetfisk: "pincetfisk",
+  //     "Sortbåndet kirugfisk": "sortbaandet-kirurgfisk",
+  //   };
 
-    const className = classMap[fish.fishName];
+    // const className = classMap[fish.fishName];
 
     // Tilføjer event listeners til hver fisk baseret på data-strukturen
     fishInfo.forEach((fish) => {
-      const fishDetails = classMap[fish.fishName];
+      const fishDetails = document.getElementById(fish.id);
       if (fishDetails) {
-        document.querySelectorAll("#" + fishDetails).forEach((elem) => {
-          elem.addEventListener("click", () => {
-            const fishDetails = `
+        fishDetails.addEventListener("click", () => {
+          const fishFacts = `
+        <img src=${fish.fishImg} alt=${fish.fishName}>
         <strong>${fish.fishName}</strong><br>
-        Color: ${fish.fishColor}<br>
-        Location: ${fish.fishLocation}<br>
-        Length: ${fish.fishLength}<br>
-        Food: ${fish.fishFood}
-        `; // Opretter HTML tekst med fiskeoplysninger
+        Fact: ${fish.fishFact}`;  // Opretter HTML tekst med fiskeoplysninger
             // ShowTooltip er en funktion fra tidligere, forventer en parameter som vi her henter fra fishDetails
-            showTooltip(fishDetails);
-          });
+            showTooltip(fishFacts);
         });
-      }
-    }); // Lukker DOMContentLoaded
-
-    if (className) {
-      document.querySelectorAll("." + fish.fishName).forEach((elem) => {
-        // Vælger alle elementer med den givne className
-        elem.addEventListener("click", () => {
-          const fishDetails = `
-        <strong>${fish.fishName}</strong><br>
-        Color: ${fish.fishColor}<br>
-        Location: ${fish.fishLocation}<br>
-        Length: ${fish.fishLength}<br>
-        Food: ${fish.fishFood}
-        `; // Opretter HTML tekst med fiskeoplysninger
-          // ShowTooltip er en funktion fra tidligere, forventer en parameter som vi her henter fra fishDetails
-          showTooltip(fishDetails);
-        });
-      });
-    }
+      };
+    });
   });
-}); // Lukker DOMContentLoaded
-
-// Tilføj event listener til knappen for at navigere tilbage start siden
-document.getElementById("tilbage").addEventListener("click", function () {
-  window.location.href = "../index.html";
-});

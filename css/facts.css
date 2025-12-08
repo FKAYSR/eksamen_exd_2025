@@ -273,6 +273,7 @@ body {
   }
 }
 
+/* Bobble der forklarer hvad man kan gøre på siden */
 #facts-bubble {
   position: absolute;
   display: inline-flex;
@@ -295,8 +296,8 @@ body {
 /* Bestemmer placering af pop-up med facts */
 .facts {
   position: fixed;
-  right: 42vw;
-  bottom: 40vh;
+  right: 40vw;
+  bottom: 30vh;
   background-image: url(../images/facts/Pop-up.svg);
   background-size: contain;
   background-position: center;
