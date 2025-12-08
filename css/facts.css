@@ -52,42 +52,6 @@ body {
   transform: scale(1.05);
 }
 
-.image-button {
-  position: relative;
-  display: inline-flex;
-  top: 2%;
-  left: 30%;
-  flex-direction: column;
-  align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: transform 0.3s ease;
-  z-index: 100;
-}
-
-.image-button:hover {
-  transform: scale(1.05);
-}
-
-.image-button img {
-  max-width: 30%;
-  height: auto;
-}
-
-.image-button span {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-weight: bold;
-  font-size: 40px;
-  max-width: 20%;
-}
-
 #skattekiste {
   position: absolute;
   bottom: 16px;
