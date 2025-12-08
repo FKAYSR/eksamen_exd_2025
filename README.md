@@ -13,6 +13,7 @@
     * Er gået fra 81 linjer til 75.
 * style.css
     * Har gjort bobble-knapperne og teksten indeni større
+    * Givet bobble-knapperne en float animation, så de bevæger sig som stillestående bobler
 
 ### 2. Pac-Nemo (spil)
 Her styrer man en fisk, samler tabte mønter i havet og får point med lyd-feedback og en visuel point viser.
