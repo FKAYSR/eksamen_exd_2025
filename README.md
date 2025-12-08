@@ -35,5 +35,9 @@ Den interaktive fakta-side gør det muligt for brugeren at lære om fiskene som 
 * facts.css
     * Tilføjet animationer til alle fiskene i stedet for at de før bare var i et grid. Fra linje 116 til 274
     * Bestemt størrelse og placering af den ny tilføjede facts-bubble
+    * Æmdret .facts så tooltip pop-up er ændret placering og udseende
+    * tooltip-content tilføjet for at ændre placeringen og størrelsen på teksten og billedet placeret i tooltippen
+    * overlay tilføjet så baggrunden bliver sløret når pop-uppen vises
 * facts.js
-    * 
+    * fishInfo ændret så i stedet for fishName, fishColor, fishLocation, fishLength og fishFood, er det nu id, fishImg, fishName og fishFact.
+    * eventListener ændret så overlay er tilføjet til klik eventet og classMap er fjernet til fordel for at have givet hvert objekt et id oppe i fishInfo.
