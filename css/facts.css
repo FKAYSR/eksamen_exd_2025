@@ -32,7 +32,7 @@ body {
   inset: auto 0 0 0;
   width: 100%;
   height: 100%;
-  background: url(../images/facts/background.png);
+  background: url(./images/facts/background.png);
   background-size: 100vw auto;
   overflow: hidden;
   background-position: center bottom;
@@ -261,7 +261,7 @@ body {
   position: fixed;
   right: 28vw;
   bottom: 10vh;
-  background-image: url(../images/facts/Pop-up.svg);
+  background-image: url(./images/facts/Pop-up.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
