@@ -304,7 +304,9 @@ body {
   display: none;
   position: fixed;
   inset: 0; /* Fylder hele skærmen */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(25, 25, 25, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 4;
 }
 
 #overlay.is-visible {
