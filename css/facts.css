@@ -261,7 +261,7 @@ body {
   position: fixed;
   right: 28vw;
   bottom: 10vh;
-  background-image: url(../images/facts/pop-up.svg);
+  background-image: img(../images/facts/pop-up.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
